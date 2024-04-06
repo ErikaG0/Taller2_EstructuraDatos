@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{fontawesome5}
+\usepackage[table]{xcolor}
+% Language setting
+\usepackage[spanish]{babel}
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{url}
+% Title and author info
+
+\author{Gamboa Macias Erika  Cod.506221053}
+\date{}
+\begin{document}
+\begin{titlepage}
+\centering
+\vspace*{\fill}
+{\Huge\textbf{Taller II Multiplicación de Matrices y Tensores}}
+\vspace{2em}
+
+{\large Estructura De Datos.}\\
+{\large Gamboa Erika  Cod.506221053}
+\vspace*{\fill}
+\end{titlepage}
+
+
+\section{Multiplicación de Matrices en Python}
+\begin{quote}
+Se realizo la creación de dos matrices en Python importando la librería numpy en la cual sus dos matrices 
+contenían números enteros  y constan de un tamaño de (9000x6000) se mide el uso de CPU y estos son los resultados:
+\end{quote}
+\begin{minipage}{1\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{img1.JPG}
+\end{minipage}
+\hfill
+\begin{minipage}{1\textwidth}
+\includegraphics[width=\textwidth]{Img2.JPG}
+\end{minipage}
+
+\subsection{Tiempo de Ejecución}
+
+\textbf{Equipo Local:} El tiempo transcurrido fue de 1574.6238 segundos. \\
+\textbf{Google Colab:} El tiempo transcurrido fue de 591.6947 segundos. \\
+Se observa que Google Colab completó la tarea en menos tiempo que en el equipo local equipo.
+
+\subsection{Uso de CPU}
+\textbf{Equipo Local:} El uso de CPU fue de 78.800\%. \\
+\textbf{Google Colab:} El uso de CPU fue de 35.100\%. \\
+El equipo local utilizo una mayor proporción de CPU en comparación con Google Colab.
+
+\newpage
+\textbf{GPU:} El uso del tiempo en ejecución para la misma multiplicación de matrices fue las siguiente: Tiempo transcurrido: 520.1751 segundos
+Uso de GPU: 30.500\% \\\\
+\includegraphics[width=\textwidth]{img3.JPG}
+
+
+\section{Multiplicación de Tensores en Python}
+\begin{quote}
+Se realizo la creación de dos Tensores en Python importando    la librería tensorflow en la cual sus dos tensores 
+contenían números flotantesenteros  y constan de un tamaño de (9000x6000).
+
+\subsection{Uso de CPU}
+\includegraphics[width=\textwidth]{tensorCPU.JPG}
+\subsection{Uso de GPU}
+\includegraphics[width=\textwidth]{TensorGPU.JPG}
+
+\end{quote}
+
+
+\subsection{Conclusiones}
+Los tensores resultan una estructura de datos mas eficiente en el procesamiento de datos.
+
+En la multiplicación de matrices, se observa una mejora sustancial en el tiempo al multiplicar matrices utilizando una GPU. Esto se debe a que las GPU están diseñadas para realizar operaciones en paralelo de manera más eficiente, gracias a su gran cantidad de núcleos de procesamiento.
+
+Sin embargo, una mejora aún más notable se observa al reemplazar las matrices por vectores. Incluso al ejecutar la multiplicación entre tensores con una GPU, la mejora en el tiempo de ejecución es aún más significativa.
+\end{document}
